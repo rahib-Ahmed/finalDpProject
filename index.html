@@ -31,56 +31,73 @@
     </head>
 
     <body class="cont1">
-        <nav class="shadow navbar navbar-expand-lg navbar-light bg-light">
+        <nav style="display: flex; align-items: flex-start; justify-content: space-between;" class="shadow navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="#">
                 <h2>We Proof Concept</h2>
             </a>
+            
+            <h2>Visualisations</h2>
         </nav>
 
         <div class="container-xl">
-            <div class="row">
-                <div class="col-lg-8 mx-auto mt-5">
-                    <h2>Visualisations</h2>
+            <div style="display: flex;align-items: center;justify-content: center;  width: 80vw; margin-top: 12em;" class="row">
+                <div style="align-items: center;justify-content: center; height: 100%; width: 100%; display: flex;" >
                     <div
                         data-interval="false"
                         id="myCarousel"
                         class="carousel slide"
                         data-ride="carousel"
-                    style="display: flex; height: 70vh; align-items: center;"
+                    style="display: flex; height: 50vh;width: 70%;  align-items: center;"
                     >
 
-                        <div data-interval="false" class="carousel-inner">
+                        <div data-interval="false" class="carousel-inner" >
+                            
                             <div class="carousel-item active">
-                                <h1>Visualisation 1</h1>
-                                <div>
-                                    <canvas id="myChart" style="height: auto; width: auto;"></canvas>
-                                </div>
+                                    
+                                <div style="display: flex; align-items: flex-start; flex-direction: column; position: relative;">
+                                    
+                                    <canvas id="myChart0.1" style="height: auto; width: auto;"></canvas>
+                                
+                                
+                                    <canvas id="myChart0.2" style="height: auto; width: auto;"></canvas>
                                 
                             </div>
+
+                            </div>
                             <div class="carousel-item">
-                                <h1>Visualisation 2</h1>
                                 <div>
                                     <canvas id="myChart1" style="height: auto; width: auto;"></canvas>
                                 </div>
+                                <span>The above chart displays all the games with critic score more than <b>9.5</b> <br>where <b>10</b> games received a critic score of 10.0</span>
                             </div>
                             <div class="carousel-item">
-                                <p class="overview">
-                                    <b>Michael Holz</b>, Seo Analyst</p>
+                                
+                                    <div>
+                                        <canvas id="myChart3" style="height: auto; width: auto;"></canvas>
+                                    </div>
+                                    <span>This chart represents the Top ranked games data with their global sales from year <b>2004-2018</b></span>
                             </div>
+                            <div class="carousel-item">
+                                
+                                <div>
+                                    <canvas id="myChart4" style="height: auto; width: auto;"></canvas>
+                                </div>
+                                <span>The chart represents </span>
+                        </div>
                         </div>
                         <!-- Carousel controls -->
                         <a
-                            class="carousel-control-prev mt-5 "
-                            style="height: 100%;"
+                            class="carousel-control-prev"
+                            style="display: flex; margin-right: 100%; height: 100%; width: 50; background-color: rgba(0, 0, 0, 0.145); border-radius: 3.5%;"
                             href="#myCarousel"
                             data-slide="prev">
 
-                            <img style="height: 28px;width: 28px;" src="arrow-left (1).svg">
+                            <img style="height: 28px;width: 28px; ;" src="arrow-left (1).svg">
                         </a>
                         <a
-                            class="carousel-control-next mt-5"
-                            style="height: 100%;"
-                            href="#myCarousel"
+                            class="carousel-control-next"
+                            style="height: 100%; width: 50; background-color: rgba(0, 0, 0, 0.145); border-radius: 3.5%; margin-left: 100%;"
+                            href="#myCarousel "
                             data-slide="next">
                             <img style="height: 28px;width: 28px;" src="arrow-right (1).svg">
                         </a>
