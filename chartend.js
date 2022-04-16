@@ -53,7 +53,7 @@ async function getChartData() {
     var topYearGame = []
     var devSaleByYear = []
     // console.log("x="+x+"y="+y)
-    await fetch(`http://localhost:3000/users`, {})
+    await fetch(`https://dpfinalapi.herokuapp.com/users`, {})
         .then(res => res.json())
         .then(async(response) => {
 
